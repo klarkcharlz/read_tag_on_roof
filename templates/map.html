@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карта RFID</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}" type="text/css"/>
+
+
+</head>
+<body>
+    <h1>Котельники</h1>
+
+    <hr>
+
+        <div>
+
+          <form action="/" method="POST">
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr style="height: 39px">
+        <th id="0R0" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">1</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s1" dir="ltr">Е01 <input type="radio" name="zone" value="Е01"></td>
+        <td class="s1" dir="ltr">Е02 <input type="radio" name="zone" value="Е02"></td>
+        <td class="s1" dir="ltr">Е03 <input type="radio" name="zone" value="Е03"></td>
+        <td class="s1" dir="ltr">Е04 <input type="radio" name="zone" value="Е04"></td>
+        <td class="s1" dir="ltr">Е05 <input type="radio" name="zone" value="Е05"></td>
+        <td class="s1" dir="ltr">Е06 <input type="radio" name="zone" value="Е06"></td>
+        <td class="s1" dir="ltr">Е07 <input type="radio" name="zone" value="Е07"></td>
+        <td class="s1" dir="ltr">Е08 <input type="radio" name="zone" value="Е08"></td>
+        <td class="s1" dir="ltr">Е09 <input type="radio" name="zone" value="Е09"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R1" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">2</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s2" dir="ltr" colspan="8">СТЕЛАЖИ</td>
+        <td class="s1" dir="ltr">DE1 <input type="radio" name="zone" value="DE1"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R2" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">3</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s1" dir="ltr">D01 <input type="radio" name="zone" value="D01"></td>
+        <td class="s1" dir="ltr">D02 <input type="radio" name="zone" value="D02"></td>
+        <td class="s1" dir="ltr">D03 <input type="radio" name="zone" value="D03"></td>
+        <td class="s1" dir="ltr">D04 <input type="radio" name="zone" value="D04"></td>
+        <td class="s1" dir="ltr">D05 <input type="radio" name="zone" value="D05"></td>
+        <td class="s1" dir="ltr">D06 <input type="radio" name="zone" value="D06"></td>
+        <td class="s1" dir="ltr">D07 <input type="radio" name="zone" value="D07"></td>
+        <td class="s1" dir="ltr">D08 <input type="radio" name="zone" value="D08"></td>
+        <td class="s1" dir="ltr">D09 <input type="radio" name="zone" value="D09"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R3" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">4</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s1" dir="ltr" colspan="13">СТЕЛАЖИ</td>
+        <td class="s1" dir="ltr" colspan="2">Kuka 300</td>
+        <td class="s1" dir="ltr" colspan="2">Fanuc</td>
+        <td class="s1" dir="ltr">CD1 <input type="radio" name="zone" value="CD1"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R4" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">5</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s1" dir="ltr">C01 <input type="radio" name="zone" value="C01"></td>
+        <td class="s1" dir="ltr">C02 <input type="radio" name="zone" value="C02"></td>
+        <td class="s1" dir="ltr">C03 <input type="radio" name="zone" value="C03"></td>
+        <td class="s1" dir="ltr">C04 <input type="radio" name="zone" value="C04"></td>
+        <td class="s1" dir="ltr">C05 <input type="radio" name="zone" value="C05"></td>
+        <td class="s1" dir="ltr">C06 <input type="radio" name="zone" value="C06"></td>
+        <td class="s1" dir="ltr">C07 <input type="radio" name="zone" value="C07"></td>
+        <td class="s1" dir="ltr">C08 <input type="radio" name="zone" value="C08"></td>
+        <td class="s1" dir="ltr">C09 <input type="radio" name="zone" value="C09"></td>
+        <td class="s1" dir="ltr">C10 <input type="radio" name="zone" value="C10"></td>
+        <td class="s1" dir="ltr">C11 <input type="radio" name="zone" value="C11"></td>
+        <td class="s1" dir="ltr">C12 <input type="radio" name="zone" value="C12"></td>
+        <td class="s1" dir="ltr">C13 <input type="radio" name="zone" value="C13"></td>
+        <td class="s1" dir="ltr">C14 <input type="radio" name="zone" value="C14"></td>
+        <td class="s1" dir="ltr">C15 <input type="radio" name="zone" value="C15"></td>
+        <td class="s1" dir="ltr">C16 <input type="radio" name="zone" value="C16"></td>
+        <td class="s1" dir="ltr">C17 <input type="radio" name="zone" value="C17"></td>
+        <td class="s1" dir="ltr">C18 <input type="radio" name="zone" value="C18"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R5" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">6</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s2" dir="ltr" colspan="17">СТЕЛАЖИ</td>
+        <td class="s1" dir="ltr">BC1 <input type="radio" name="zone" value="BC1"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R6" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">7</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s1" colspan="2"></td>
+        <td class="s1" dir="ltr">B01 <input type="radio" name="zone" value="B01"></td>
+        <td class="s1" dir="ltr">B02 <input type="radio" name="zone" value="B02"></td>
+        <td class="s1" dir="ltr">B03 <input type="radio" name="zone" value="B03"></td>
+        <td class="s1" dir="ltr">B04 <input type="radio" name="zone" value="B04"></td>
+        <td class="s1" dir="ltr">B05 <input type="radio" name="zone" value="B05"></td>
+        <td class="s1" dir="ltr">B06 <input type="radio" name="zone" value="B06"></td>
+        <td class="s1" dir="ltr">B07 <input type="radio" name="zone" value="B07"></td>
+        <td class="s1" dir="ltr">B08 <input type="radio" name="zone" value="B08"></td>
+        <td class="s1" dir="ltr">B09 <input type="radio" name="zone" value="B09"></td>
+        <td class="s1" dir="ltr">B10 <input type="radio" name="zone" value="B10"></td>
+        <td class="s1" dir="ltr">B11 <input type="radio" name="zone" value="B11"></td>
+        <td class="s1" dir="ltr">B12 <input type="radio" name="zone" value="B12"></td>
+        <td class="s1" dir="ltr">B13 <input type="radio" name="zone" value="B13"></td>
+        <td class="s1" dir="ltr">B14 <input type="radio" name="zone" value="B14"></td>
+        <td class="s1" dir="ltr">B15 <input type="radio" name="zone" value="B15"></td>
+        <td class="s1" dir="ltr">B16 <input type="radio" name="zone" value="B16"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R7" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">8</div>
+        </th>
+        <td class="s3" dir="ltr" rowspan="3">СПАРКА 1</td>
+        <td class="s1" dir="ltr" colspan="4">СПАРКА 2</td>
+        <td class="s1" dir="ltr" colspan="4">СПАРКА 3</td>
+        <td class="s2" dir="ltr" colspan="18">СТЕЛАЖИ</td>
+        <td class="s1" dir="ltr">AB1 <input type="radio" name="zone" value="AB1"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 39px">
+        <th id="0R8" style="height: 39px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 39px">9</div>
+        </th>
+        <td class="s1" dir="ltr">A02 <input type="radio" name="zone" value="A02"></td>
+        <td class="s1" dir="ltr">A03 <input type="radio" name="zone" value="A03"></td>
+        <td class="s1" dir="ltr">A04 <input type="radio" name="zone" value="A04"></td>
+        <td class="s1" dir="ltr">A05 <input type="radio" name="zone" value="A05"></td>
+        <td class="s1" dir="ltr">A06 <input type="radio" name="zone" value="A06"></td>
+        <td class="s1" dir="ltr">A07 <input type="radio" name="zone" value="A07"></td>
+        <td class="s1" dir="ltr">A08 <input type="radio" name="zone" value="A08"></td>
+        <td class="s1" dir="ltr">A09 <input type="radio" name="zone" value="A09"></td>
+        <td class="s1" dir="ltr">A10 <input type="radio" name="zone" value="A10"></td>
+        <td class="s1" dir="ltr">A11 <input type="radio" name="zone" value="A11"></td>
+        <td class="s1" dir="ltr">A12 <input type="radio" name="zone" value="A12"></td>
+        <td class="s1" dir="ltr">A13 <input type="radio" name="zone" value="A13"></td>
+        <td class="s1" dir="ltr">A14 <input type="radio" name="zone" value="A14"></td>
+        <td class="s1" dir="ltr">A15 <input type="radio" name="zone" value="A15"></td>
+        <td class="s1" dir="ltr">A16 <input type="radio" name="zone" value="A16"></td>
+        <td class="s1" dir="ltr">A17 <input type="radio" name="zone" value="A17"></td>
+        <td class="s1" dir="ltr">A18 <input type="radio" name="zone" value="A18"></td>
+        <td class="s1" dir="ltr">A19 <input type="radio" name="zone" value="A19"></td>
+        <td class="s1" dir="ltr">A20 <input type="radio" name="zone" value="A20"></td>
+        <td class="s1" dir="ltr">A21 <input type="radio" name="zone" value="A21"></td>
+        <td class="s1" dir="ltr">A22 <input type="radio" name="zone" value="A22"></td>
+        <td class="s1" dir="ltr">A23 <input type="radio" name="zone" value="A23"></td>
+        <td class="s1" dir="ltr">A24 <input type="radio" name="zone" value="A24"></td>
+        <td class="s1" dir="ltr">A25 <input type="radio" name="zone" value="A25"></td>
+        <td class="s1" dir="ltr">A26 <input type="radio" name="zone" value="A26"></td>
+        <td class="s1" dir="ltr">A27 <input type="radio" name="zone" value="A27"></td>
+        <td class="s1" dir="ltr">A28 <input type="radio" name="zone" value="A28"></td>
+        <td class="s1" dir="ltr">A29 <input type="radio" name="zone" value="A29"></td>
+      </tr>
+      <tr style="height: 29px">
+        <th id="0R9" style="height: 29px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 29px">10</div>
+        </th>
+        <td class="s4" dir="ltr">стл_17</td>
+        <td class="s4" dir="ltr">стл_16</td>
+        <td class="s4" dir="ltr">стл_15</td>
+        <td class="s4" dir="ltr">стл_14</td>
+        <td class="s4" dir="ltr">стл_13</td>
+        <td class="s4" dir="ltr">стл_12</td>
+        <td class="s4" dir="ltr">стл_11</td>
+        <td class="s4" dir="ltr">стл_10</td>
+        <td class="s4" dir="ltr">стл_9</td>
+        <td class="s4" dir="ltr">стл_8</td>
+        <td class="s4" dir="ltr">стл_7</td>
+        <td class="s5" dir="ltr">ворота на улицу</td>
+        <td class="s4" dir="ltr">стл_6</td>
+        <td class="s4" dir="ltr">стл_5</td>
+        <td class="s4" dir="ltr">стл_4</td>
+        <td class="s4" dir="ltr">стл_3</td>
+        <td class="s4" dir="ltr">стл_2</td>
+        <td class="s6" dir="ltr" colspan="2">между ворота</td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s6" dir="ltr" colspan="2">между ворота</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+            <div>
+              <input type="range" min="5" max="80" step="5" value="45" name="tx_power"
+                     style="width: 600px; height: 90px;">
+            </div>
+            <button type="submit" name="zone">СЧИТАТЬ</button>
+            </form>
+        </div>
+
+    <hr>
+
+    <div class="status">
+        <h1>Статус операции:</h1><br>
+        <h2>Выберите участок, поднесите антенну к метке и нажмите считать.</h2><br>
+        <h2><b>{{status_info}}</b></h2><br>
+        <hr>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

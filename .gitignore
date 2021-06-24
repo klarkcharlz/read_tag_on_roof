@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# add ignore
+non_code_files
+config.py
+tags.bak
+tags.dat
+tags.dir
+try.py
+.idea
